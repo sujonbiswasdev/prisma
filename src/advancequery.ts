@@ -41,9 +41,11 @@ async function main() {
 
     // ......................................
 
-    where:{
-        review:{some:{}}
-    }
+    // where:{
+    //     review:{some:{}}
+    // }
+
+    
     })
     console.log("query data sucessfull : ",queryResult)
 }
