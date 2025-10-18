@@ -86,18 +86,12 @@ async function main() {
 
 
 
-    const createUser = await prisma.user.create({
+    const createUser = await prisma.review.create({
         data:{
-            name:"madob96",
-            email:"madob96@gmail.com",
-            password:"1478",
-            watchList:{
-                connect:[{id:"3f52e6f1-1014-4ffa-a0df-3fae1e103975"},{id:"4cc01e4f-f4de-4803-9057-90a8aad8523d"},{id:"84e6b648-05f4-4d2c-b641-83dfc915551f"}],
-            }
+            comment:"sujon",
+            movieId:"1421fa0f-0a5e-458e-b5fa-c18f9912ec18",
+            userId:"b97659c9-b3dd-4f61-bb01-88d4784728d5",
         },
-        include:{
-            watchList:true
-        }
     })
     console.log(createUser)
 
