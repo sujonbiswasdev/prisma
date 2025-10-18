@@ -6,7 +6,10 @@
   "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node-dev --respawn --transpile-only src/server.ts"
+    "start": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "find": "ts-node-dev --respawn --transpile-only src/find.ts",
+     "update": "ts-node-dev --respawn --transpile-only src/update.ts",
+      "delete": "ts-node-dev --respawn --transpile-only src/delete.ts"
   },
   "keywords": [],
   "author": "",

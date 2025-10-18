@@ -20,6 +20,7 @@ model User{
   name String
   email String @unique
   password String
+
   watchList Movie[] @relation("UserWatchList")
   review Review[]
   createAt DateTime @default(now())
@@ -33,6 +34,7 @@ model Movie{
   director String
   rating String?
   genre String
+  
   watchListUser User[] @relation("UserWatchList")
   review Review[]
   createAt DateTime @default(now())
