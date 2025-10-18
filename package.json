@@ -9,7 +9,8 @@
     "start": "ts-node-dev --respawn --transpile-only src/server.ts",
     "find": "ts-node-dev --respawn --transpile-only src/find.ts",
      "update": "ts-node-dev --respawn --transpile-only src/update.ts",
-      "delete": "ts-node-dev --respawn --transpile-only src/delete.ts"
+      "delete": "ts-node-dev --respawn --transpile-only src/delete.ts",
+       "query": "ts-node-dev --respawn --transpile-only src/advancequery.ts"
   },
   "keywords": [],
   "author": "",
